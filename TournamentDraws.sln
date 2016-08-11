@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "TournamentDrawService\Service.csproj", "{A42B641C-3370-42A3-A3C1-A45C24768341}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{A42B641C-3370-42A3-A3C1-A45C24768341}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{7AF89DF2-1FCF-457F-A996-6DC8B9765CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "TournamentDraws.Data\Data.csproj", "{684E3DF6-8904-43B2-A509-5CBD835CD35A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{684E3DF6-8904-43B2-A509-5CBD835CD35A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{5DB28B28-13D1-4C2F-8A51-0019EC3EFBF8}"
 EndProject
