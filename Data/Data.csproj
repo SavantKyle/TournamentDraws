@@ -37,6 +37,8 @@
     <Compile Include="Players\GetAll.cs" />
     <Compile Include="Players\GetById.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teams\GetAll.cs" />
+    <Compile Include="Teams\GetById.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataProvider.Contracts\DataProvider.Contracts.csproj">

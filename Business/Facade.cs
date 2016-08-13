@@ -14,5 +14,8 @@ namespace Business
 
         private IPlayerService _playerService;
         public IPlayerService PlayerService => _playerService ?? (_playerService = new PlayerService(_database));
+
+        private ITeamService _teamService;
+        public ITeamService TeamService => _teamService ?? (_teamService = new TeamService(_database));
     }
 }

@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="IFacade.cs" />
     <Compile Include="IPlayerService.cs" />
+    <Compile Include="ITeamService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
