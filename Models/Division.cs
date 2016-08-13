@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Models.Contracts;
 
 namespace Models
 {
-    public class Division
+    public class Division : IEntity
     {
         public int Id { get; set; }
         public string Description { get; set; }

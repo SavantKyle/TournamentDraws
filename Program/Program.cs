@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Data;
+using Data.Players;
 
 namespace Program
 {
@@ -11,7 +12,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            var players = new PlayerRepo().Get();
+            var players = new GetAll().Get();
             foreach (var player in players)
             {
                 Console.WriteLine($"First Name: {player.FirstName}");

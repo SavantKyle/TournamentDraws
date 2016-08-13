@@ -1,6 +1,8 @@
-﻿namespace Models
+﻿using Models.Contracts;
+
+namespace Models
 {
-    public class Facility
+    public class Facility : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
