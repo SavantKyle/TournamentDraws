@@ -1,6 +1,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using DataProvider.Contracts;
 
 namespace DataProvider
 {

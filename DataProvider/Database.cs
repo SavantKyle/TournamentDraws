@@ -1,3 +1,5 @@
+using DataProvider.Contracts;
+
 namespace DataProvider
 {
     public class Database : IDatabase

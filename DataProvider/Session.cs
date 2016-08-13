@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Configuration;
 using Dapper;
+using DataProvider.Contracts;
 
 namespace DataProvider
 {
@@ -9,13 +11,14 @@ namespace DataProvider
 
         public Session(string connectionString)
         {
-            _context = new DapperContext(connectionString);
+            _context = new DapperContext(ConfigurationManager.ConnectionStrings["TournamentDraws"].ConnectionString);
         }
 
         public Session(IDapperContext context)
         {
             _context = context;
         }
+
         public virtual IEnumerable<T> Query<T>(string query, object param)
         {
             return _context.Transaction(transaction =>
