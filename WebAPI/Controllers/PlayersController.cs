@@ -27,8 +27,9 @@ namespace WebAPI.Controllers
         }
 
         // POST: api/Players
-        public void Post([FromBody]string value)
+        public Player Post([FromBody]Player player)
         {
+            return _facade.PlayerService.Insert(player);
         }
 
         // PUT: api/Players/5

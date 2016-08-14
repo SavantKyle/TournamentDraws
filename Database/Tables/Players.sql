@@ -1,9 +1,10 @@
-﻿CREATE TABLE [dbo].[Players] (
-    [Id]        INT          IDENTITY (1, 1) NOT NULL,
-    [FirstName] VARCHAR (20) NOT NULL,
-    [LastName]  VARCHAR (20) NOT NULL,
-    [Email]     VARCHAR (50) NOT NULL,
-    [Phone]     VARCHAR (10) NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
-
+﻿CREATE TABLE [dbo].[Players]
+(
+	[Id] INT identity PRIMARY KEY NOT NULL, 
+	FirstName varchar(100) not null,
+	LastName varchar(100) not null, 
+	Phone varchar(10), 
+	Email varchar(100), 
+	Ntrp decimal(2,1),
+	TeamId int foreign key references Teams(Id)
+)
