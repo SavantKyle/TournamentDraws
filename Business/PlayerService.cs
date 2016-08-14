@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Business.Contracts;
 using Data.Players;
 using DataProvider.Contracts;
@@ -23,6 +24,21 @@ namespace Business
         public Player GetById(int id)
         {
             return _database.Query(new GetById(id));
+        }
+
+        public Player Insert(Player player)
+        {
+            return _database.Query(new Insert(player));
+        }
+
+        public void Update(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            _database.Execute(new Delete(id));
         }
     }
 }

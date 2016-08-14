@@ -13,11 +13,7 @@ namespace WebAPI.Controllers
         {
             _facade = facade;
         }
-
-        public PlayersController()
-        {
-        }
-
+        
         // GET: api/Players
         public IEnumerable<Player> Get()
         {
@@ -43,6 +39,7 @@ namespace WebAPI.Controllers
         // DELETE: api/Players/5
         public void Delete(int id)
         {
+            _facade.PlayerService.Delete(id);
         }
     }
 }
