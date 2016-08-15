@@ -6,5 +6,6 @@
 	Phone varchar(10), 
 	Email varchar(100), 
 	Ntrp decimal(2,1),
-	TeamId int foreign key references Teams(Id)
+	TeamId int foreign key references Teams(Id),
+	AddressId int foreign key references Addresses(Id) 
 )

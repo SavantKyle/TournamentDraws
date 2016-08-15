@@ -4,6 +4,8 @@ using System.Reflection;
 using System.Web.Compilation;
 using Autofac;
 using Autofac.Integration.WebApi;
+using Business;
+using Business.Contracts;
 using DataProvider;
 using DataProvider.Contracts;
 
@@ -21,8 +23,9 @@ namespace IoC
 
             //Register Services
             builder.RegisterAssemblyTypes(assemblies).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces();
-            builder.RegisterAssemblyTypes(assemblies).Where(x => x.Name.EndsWith("Facade")).AsImplementedInterfaces();
+            //builder.RegisterAssemblyTypes(assemblies).Where(x => x.Name.EndsWith("Facade")).AsImplementedInterfaces();
 
+            builder.RegisterType<Facade>().As<IFacade>();
             builder.RegisterType<Database>().As<IDatabase>();
             builder.RegisterType<Session>().As<ISession>();
             builder.Register(

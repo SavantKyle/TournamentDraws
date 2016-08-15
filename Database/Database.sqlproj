@@ -59,6 +59,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Seed" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Players.sql" />
@@ -69,11 +70,9 @@
     <Build Include="Tables\Directors.sql" />
     <Build Include="Tables\Facilities.sql" />
     <Build Include="Tables\Addresses.sql" />
+    <None Include="Seed\AddPlayers.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AddPlayers.sql" />
   </ItemGroup>
 </Project>
