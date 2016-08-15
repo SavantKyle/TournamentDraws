@@ -27,8 +27,9 @@ namespace WebAPI.Controllers
         }
 
         // POST: api/Teams
-        public void Post([FromBody]string value)
+        public Team Post([FromBody]Team team)
         {
+            return _facade.TeamService.Insert(team);
         }
 
         // PUT: api/Teams/5
@@ -39,6 +40,7 @@ namespace WebAPI.Controllers
         // DELETE: api/Teams/5
         public void Delete(int id)
         {
+            _facade.TeamService.Delete(id);
         }
     }
 }

@@ -33,8 +33,9 @@ namespace WebAPI.Controllers
         }
 
         // PUT: api/Players/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]Player player)
         {
+            _facade.PlayerService.Update(id, player);
         }
 
         // DELETE: api/Players/5

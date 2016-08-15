@@ -12,13 +12,13 @@ namespace Data.Players
         {
             _player = player;
         }
-        
+
         Player IQuery<Player>.Execute(ISession session)
         {
             _player.Id = session.Query<int>(
-                    @"Insert into Players (FirstName, LastName, Email, Phone, Ntrp) values (@FirstName, @LastName, @Email, @Phone, @Ntrp);
+                    @"Insert into Players (FirstName, LastName, Email, Phone, Ntrp, TeamId) values (@FirstName, @LastName, @Email, @Phone, @Ntrp, @TeamId);
                     select cast(scope_identity() as int)",
-                    new {_player.FirstName, _player.LastName, _player.Email, _player.Phone, _player.Ntrp}).First();
+                    new { _player.FirstName, _player.LastName, _player.Email, _player.Phone, _player.Ntrp, _player.TeamId }).First();
             return _player;
         }
     }

@@ -31,9 +31,9 @@ namespace Business
             return _database.Query(new Insert(player));
         }
 
-        public void Update(int id)
+        public void Update(int id, Player player)
         {
-            throw new NotImplementedException();
+            _database.Execute(new Update(id, player));
         }
 
         public void Delete(int id)

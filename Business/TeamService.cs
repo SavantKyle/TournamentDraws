@@ -24,5 +24,20 @@ namespace Business
         {
             return _database.Query(new GetById(id));
         }
+
+        public Team Insert(Team team)
+        {
+            return _database.Query(new Insert(team));
+        }
+
+        public void Update(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            _database.Execute(new Delete(id));
+        }
     }
 }

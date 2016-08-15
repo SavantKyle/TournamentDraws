@@ -12,13 +12,13 @@ namespace Data.Teams
         {
             _team = team;
         }
-        
+
         Team IQuery<Team>.Execute(ISession session)
         {
             _team.Id = session.Query<int>(
                 @"Insert into Teams (Name) values (@Name); 
                 select cast(scope_identity() as int)",
-                new {_team.Name}).First();
+                new { _team.Name }).First();
             return _team;
         }
     }

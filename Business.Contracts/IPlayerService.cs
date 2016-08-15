@@ -8,7 +8,7 @@ namespace Business.Contracts
         IEnumerable<Player> GetAll();
         Player GetById(int id);
         Player Insert(Player player);
-        void Update(int id);
+        void Update(int id, Player player);
         void Delete(int id);
     }
 }
