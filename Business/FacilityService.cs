@@ -1,38 +1,38 @@
 ﻿using System.Collections.Generic;
 using Business.Contracts;
-using Data.Teams;
+using Data.Facilities;
 using DataProvider.Contracts;
 using Models;
 
 namespace Business
 {
-    public class TeamService : ITeamService
+    public class FacilityService : IFacilityService
     {
         private readonly IDatabase _database;
 
-        public TeamService(IDatabase database)
+        public FacilityService(IDatabase database)
         {
             _database = database;
         }
 
-        public IEnumerable<Team> GetAll()
+        public IEnumerable<Facility> GetAll()
         {
             return _database.Query(new GetAll());
         }
 
-        public Team GetById(int id)
+        public Facility GetById(int id)
         {
             return _database.Query(new GetById(id));
         }
 
-        public Team Insert(Team team)
+        public Facility Insert(Facility facility)
         {
-            return _database.Query(new Insert(team));
+            return _database.Query(new Insert(facility));
         }
 
-        public void Update(int id, Team team)
+        public void Update(int id, Facility facility)
         {
-            throw new System.NotImplementedException();
+            _database.Execute(new Update(id, facility));
         }
 
         public void Delete(int id)

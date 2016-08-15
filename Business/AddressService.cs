@@ -1,38 +1,38 @@
 ﻿using System.Collections.Generic;
 using Business.Contracts;
-using Data.Teams;
+using Data.Addresses;
 using DataProvider.Contracts;
 using Models;
 
 namespace Business
 {
-    public class TeamService : ITeamService
+    public class AddressService : IAddressService
     {
         private readonly IDatabase _database;
 
-        public TeamService(IDatabase database)
+        public AddressService(IDatabase database)
         {
             _database = database;
         }
 
-        public IEnumerable<Team> GetAll()
+        public IEnumerable<Address> GetAll()
         {
             return _database.Query(new GetAll());
         }
 
-        public Team GetById(int id)
+        public Address GetById(int id)
         {
             return _database.Query(new GetById(id));
         }
 
-        public Team Insert(Team team)
+        public Address Insert(Address address)
         {
-            return _database.Query(new Insert(team));
+            return _database.Query(new Insert(address));
         }
 
-        public void Update(int id, Team team)
+        public void Update(int id, Address address)
         {
-            throw new System.NotImplementedException();
+            _database.Execute(new Update(id, address));
         }
 
         public void Delete(int id)

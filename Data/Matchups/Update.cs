@@ -2,17 +2,17 @@
 using DataProvider.Contracts;
 using Models;
 
-namespace Data.Divisions
+namespace Data.Matchups
 {
     public class Update : ICommand
     {
         private readonly int _id;
-        private readonly Division _division;
+        private readonly Matchup _matchup;
 
-        public Update(int id, Division division)
+        public Update(int id, Matchup matchup)
         {
             _id = id;
-            _division = division;
+            _matchup = matchup;
         }
 
         public void Execute(ISession session)

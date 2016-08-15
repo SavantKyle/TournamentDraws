@@ -65,6 +65,11 @@
     <Compile Include="Players\Insert.cs" />
     <Compile Include="Players\Update.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Matchups\Delete.cs" />
+    <Compile Include="Matchups\GetAll.cs" />
+    <Compile Include="Matchups\GetById.cs" />
+    <Compile Include="Matchups\Insert.cs" />
+    <Compile Include="Matchups\Update.cs" />
     <Compile Include="Teams\Delete.cs" />
     <Compile Include="Teams\GetAll.cs" />
     <Compile Include="Teams\GetById.cs" />

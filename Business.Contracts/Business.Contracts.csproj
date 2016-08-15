@@ -34,9 +34,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAddressService.cs" />
+    <Compile Include="IDirectorService.cs" />
+    <Compile Include="IDivisionGroupService.cs" />
     <Compile Include="IFacade.cs" />
+    <Compile Include="IDivisionService.cs" />
+    <Compile Include="IFacilityService.cs" />
+    <Compile Include="IMatchupService.cs" />
     <Compile Include="IPlayerService.cs" />
     <Compile Include="ITeamService.cs" />
+    <Compile Include="ITournamentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

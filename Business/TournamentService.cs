@@ -1,38 +1,38 @@
 ﻿using System.Collections.Generic;
 using Business.Contracts;
-using Data.Teams;
+using Data.Tournaments;
 using DataProvider.Contracts;
 using Models;
 
 namespace Business
 {
-    public class TeamService : ITeamService
+    public class TournamentService : ITournamentService
     {
         private readonly IDatabase _database;
 
-        public TeamService(IDatabase database)
+        public TournamentService(IDatabase database)
         {
             _database = database;
         }
 
-        public IEnumerable<Team> GetAll()
+        public IEnumerable<Tournament> GetAll()
         {
             return _database.Query(new GetAll());
         }
 
-        public Team GetById(int id)
+        public Tournament GetById(int id)
         {
             return _database.Query(new GetById(id));
         }
 
-        public Team Insert(Team team)
+        public Tournament Insert(Tournament tournament)
         {
-            return _database.Query(new Insert(team));
+            return _database.Query(new Insert(tournament));
         }
 
-        public void Update(int id, Team team)
+        public void Update(int id, Tournament tournament)
         {
-            throw new System.NotImplementedException();
+            _database.Execute(new Update(id, tournament));
         }
 
         public void Delete(int id)

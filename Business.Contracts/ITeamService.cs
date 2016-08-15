@@ -8,7 +8,7 @@ namespace Business.Contracts
         IEnumerable<Team> GetAll();
         Team GetById(int id);
         Team Insert(Team team);
-        void Update(int id);
+        void Update(int id, Team team);
         void Delete(int id);
     }
 }

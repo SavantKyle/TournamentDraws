@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Business.Contracts;
 using Data.Players;
 using DataProvider.Contracts;

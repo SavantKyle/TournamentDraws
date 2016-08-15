@@ -1,38 +1,38 @@
 ﻿using System.Collections.Generic;
 using Business.Contracts;
-using Data.Teams;
+using Data.DivisionGroups;
 using DataProvider.Contracts;
 using Models;
 
 namespace Business
 {
-    public class TeamService : ITeamService
+    public class DivisionGroupService : IDivisionGroupService
     {
         private readonly IDatabase _database;
 
-        public TeamService(IDatabase database)
+        public DivisionGroupService(IDatabase database)
         {
             _database = database;
         }
 
-        public IEnumerable<Team> GetAll()
+        public IEnumerable<DivisionGroup> GetAll()
         {
             return _database.Query(new GetAll());
         }
 
-        public Team GetById(int id)
+        public DivisionGroup GetById(int id)
         {
             return _database.Query(new GetById(id));
         }
 
-        public Team Insert(Team team)
+        public DivisionGroup Insert(DivisionGroup divisionGroup)
         {
-            return _database.Query(new Insert(team));
+            return _database.Query(new Insert(divisionGroup));
         }
 
-        public void Update(int id, Team team)
+        public void Update(int id, DivisionGroup divisionGroup)
         {
-            throw new System.NotImplementedException();
+            _database.Execute(new Update(id, divisionGroup));
         }
 
         public void Delete(int id)
