@@ -7,7 +7,9 @@ namespace Models
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public decimal Ntrp { get; set; }
+        public int RatingId { get; set; }
+
+        public Rating Rating { get; set; }
         public ICollection<Division> Divisions { get; set; } = new List<Division>();
     }
 }

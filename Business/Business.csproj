@@ -39,6 +39,7 @@
     <Compile Include="DivisionGroupService.cs" />
     <Compile Include="FacilityService.cs" />
     <Compile Include="MatchupService.cs" />
+    <Compile Include="SchedulingService.cs" />
     <Compile Include="TournamentService.cs" />
     <Compile Include="DirectorService.cs" />
     <Compile Include="AddressService.cs" />

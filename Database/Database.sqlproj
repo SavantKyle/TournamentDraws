@@ -71,8 +71,18 @@
     <Build Include="Tables\Facilities.sql" />
     <Build Include="Tables\Addresses.sql" />
     <None Include="Seed\AddPlayers.sql" />
+    <Build Include="Tables\Matchups.sql" />
+    <Build Include="Tables\Ratings.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Seed\AddTeams.sql" />
+    <None Include="Seed\AddFacilities.sql" />
+    <None Include="Seed\AddTournaments.sql" />
+    <None Include="Seed\AddDivisions.sql" />
+    <None Include="Seed\AddDivisionGroups.sql" />
+    <None Include="Seed\AddRatings.sql" />
   </ItemGroup>
 </Project>

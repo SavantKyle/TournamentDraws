@@ -5,7 +5,7 @@
 	LastName varchar(100) not null, 
 	Phone varchar(10), 
 	Email varchar(100), 
-	Ntrp decimal(2,1),
-	TeamId int foreign key references Teams(Id),
+	RatingId int foreign key references Ratings(Id) not null,
+	TeamId int foreign key references Teams(Id) not null,
 	AddressId int foreign key references Addresses(Id) 
 )

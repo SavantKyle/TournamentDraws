@@ -8,6 +8,8 @@ namespace Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
+
+        public ICollection<Team> Teams { get; set; } = new List<Team>();
         public ICollection<Director> Directors { get; set; } = new List<Director>();
         public ICollection<Facility> Facilities { get; set; } = new List<Facility>();
     }

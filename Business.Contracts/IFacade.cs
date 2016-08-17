@@ -11,5 +11,6 @@
         IPlayerService PlayerService { get; }
         ITeamService TeamService { get; }
         ITournamentService TournamentService { get; }
+        ISchedulingService SchedulingService { get; }
     }
 }

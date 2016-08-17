@@ -10,5 +10,6 @@ namespace Business.Contracts
         Team Insert(Team team);
         void Update(int id, Team team);
         void Delete(int id);
+        IEnumerable<Team> GetWithRating(int tournamentId);
     }
 }

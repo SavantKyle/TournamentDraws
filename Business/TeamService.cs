@@ -39,5 +39,10 @@ namespace Business
         {
             _database.Execute(new Delete(id));
         }
+
+        public IEnumerable<Team> GetWithRating(int tournamentId)
+        {
+            return _database.Query(new GetWithRating(tournamentId));
+        }
     }
 }

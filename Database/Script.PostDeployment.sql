@@ -9,4 +9,10 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+:r .\Seed\AddRatings.sql
+:r .\Seed\AddTournaments.sql
+:r .\Seed\AddFacilities.sql
+:r .\Seed\AddDivisionGroups.sql
+:r .\Seed\AddDivisions.sql
+:r .\Seed\AddTeams.sql
 :r .\Seed\AddPlayers.sql

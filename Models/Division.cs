@@ -8,6 +8,8 @@ namespace Models
         public int Id { get; set; }
         public string Description { get; set; }
         public int DivisionGroupId { get; set; }
+
+        public DivisionGroup DivisionGroup { get; set; }
         public ICollection<Team> Teams { get; set; } = new List<Team>();
     }
 }

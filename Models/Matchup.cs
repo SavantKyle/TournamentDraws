@@ -14,5 +14,9 @@ namespace Models
         public int Team1Id { get; set; }
         public int Team2Id { get; set; }
         public int FacilityId { get; set; }
+
+        public Team Team1 { get; set; }
+        public Team Team2 { get; set; }
+        public Facility Facility { get; set; }
     }
 }

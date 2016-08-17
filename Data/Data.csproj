@@ -73,6 +73,7 @@
     <Compile Include="Teams\Delete.cs" />
     <Compile Include="Teams\GetAll.cs" />
     <Compile Include="Teams\GetById.cs" />
+    <Compile Include="Teams\GetWithRating.cs" />
     <Compile Include="Teams\Insert.cs" />
     <Compile Include="Teams\Update.cs" />
     <Compile Include="Tournaments\Delete.cs" />

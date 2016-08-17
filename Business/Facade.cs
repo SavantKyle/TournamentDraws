@@ -38,5 +38,8 @@ namespace Business
 
         private ITournamentService _tournamentService;
         public ITournamentService TournamentService => _tournamentService ?? (_tournamentService = new TournamentService(_database));
+
+        private ISchedulingService _schedulingService;
+        public ISchedulingService SchedulingService => _schedulingService ?? (_schedulingService = new SchedulingService(this));
     }
 }
