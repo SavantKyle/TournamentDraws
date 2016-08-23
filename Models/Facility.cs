@@ -1,4 +1,5 @@
-﻿using Models.Contracts;
+﻿using System.Collections.Generic;
+using Models.Contracts;
 
 namespace Models
 {
@@ -12,5 +13,6 @@ namespace Models
 
         public Address Address { get; set; }
         public Tournament Tournament { get; set; }
+        public ICollection<Court> Courts { get; set; } = new List<Court>();
     }
 }

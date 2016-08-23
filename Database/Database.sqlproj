@@ -73,6 +73,8 @@
     <None Include="Seed\AddPlayers.sql" />
     <Build Include="Tables\Matchups.sql" />
     <Build Include="Tables\Ratings.sql" />
+    <Build Include="Tables\Courts.sql" />
+    <Build Include="Tables\MatchDateTimes.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
@@ -84,5 +86,7 @@
     <None Include="Seed\AddDivisions.sql" />
     <None Include="Seed\AddDivisionGroups.sql" />
     <None Include="Seed\AddRatings.sql" />
+    <None Include="Seed\AddCourts.sql" />
+    <None Include="Seed\AddMatchDateTimes.sql" />
   </ItemGroup>
 </Project>

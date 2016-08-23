@@ -16,9 +16,9 @@ namespace Data.DivisionGroups
         DivisionGroup IQuery<DivisionGroup>.Execute(ISession session)
         {
             _divisionGroup.Id = session.Query<int>(
-                @"Insert into DivisionGroups (Description, Ntrp) values (@Description, @Ntrp); 
+                @"Insert into DivisionGroups (Name) values (@Name); 
                 select cast(scope_identity() as int)",
-                new {_divisionGroup.Description, _divisionGroup.Ntrp}).First();
+                new {_divisionGroup.Name }).First();
             return _divisionGroup;
         }
     }

@@ -19,9 +19,9 @@ namespace Data.Players
         {
             session.Execute(
                 @"Update Players 
-                set FirstName = @FirstName, LastName = @LastName, Phone = @Phone, Email = @Email, Ntrp = @Ntrp
+                set FirstName = @FirstName, LastName = @LastName, Phone = @Phone, Email = @Email, RatingId = @RatingId
                 where Id = @Id",
-                new { _player.FirstName, _player.LastName, _player.Phone, _player.Email, _player.Ntrp, Id = _id });
+                new { _player.FirstName, _player.LastName, _player.Phone, _player.Email, _player.RatingId, Id = _id });
         }
     }
 }

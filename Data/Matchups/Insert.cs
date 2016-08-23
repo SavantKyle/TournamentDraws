@@ -16,9 +16,9 @@ namespace Data.Matchups
         Matchup IQuery<Matchup>.Execute(ISession session)
         {
             _matchup.Id = session.Query<int>(
-                @"Insert into Matchups (Start, Team1Id, Team2Id, FacilityId) values (@Start, @Team1Id, @Team2Id, @FacilityId); 
+                @"Insert into Matchups (Team1Id, Team2Id, FacilityId, CourtId, MatchDateTimeId) values (@Team1Id, @Team2Id, @FacilityId, @CourtId, @MatchDateTimeId); 
                 select cast(scope_identity() as int)",
-                new { _matchup.Start, _matchup.Team1Id, _matchup.Team2Id, _matchup.FacilityId }).First();
+                new { _matchup.Team1Id, _matchup.Team2Id, _matchup.FacilityId, _matchup.CourtId, _matchup.MatchDateTimeId }).First();
             return _matchup;
         }
     }

@@ -35,10 +35,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="MatchDateTime.cs" />
     <Compile Include="Contracts\IEntity.cs" />
+    <Compile Include="Court.cs" />
     <Compile Include="Director.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="DivisionGroup.cs" />
+    <Compile Include="Enums\CourtStatus.cs" />
     <Compile Include="Enums\RatingEnum.cs" />
     <Compile Include="Enums\RatingTypeEnum.cs" />
     <Compile Include="Facility.cs" />

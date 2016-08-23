@@ -13,6 +13,14 @@ namespace Models.Enums
         ThreeFive,
         Four,
         FourFive,
-        Five
+        Five, 
+        FiveFive, 
+        Six, 
+        SixFive, 
+        Seven,
+        SevenFive, 
+        Eight, 
+        EightFive, 
+        Nine
     }
 }

@@ -42,7 +42,6 @@
     <Compile Include="IFacilityService.cs" />
     <Compile Include="IMatchupService.cs" />
     <Compile Include="IPlayerService.cs" />
-    <Compile Include="ISchedulingService.cs" />
     <Compile Include="ITeamService.cs" />
     <Compile Include="ITournamentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

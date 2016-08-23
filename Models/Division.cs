@@ -6,7 +6,7 @@ namespace Models
     public class Division : IEntity
     {
         public int Id { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; }
         public int DivisionGroupId { get; set; }
 
         public DivisionGroup DivisionGroup { get; set; }

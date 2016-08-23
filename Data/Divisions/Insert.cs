@@ -16,9 +16,9 @@ namespace Data.Divisions
         Division IQuery<Division>.Execute(ISession session)
         {
             _division.Id = session.Query<int>(
-                @"Insert into Divisions (Description) values (@Description);
+                @"Insert into Divisions (Name) values (@Name);
                 select cast(scope_identity() as int)",
-                new {_division.Description}).First();
+                new {_division.Name}).First();
             return _division;
         }
     }
