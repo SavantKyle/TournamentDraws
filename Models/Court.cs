@@ -13,7 +13,6 @@ namespace Models
         public int FacilityId { get; set; }
 
         public Facility Facility { get; set; }
-        public ICollection<MatchDateTime> MatchDateTimes { get; set; } = new List<MatchDateTime>();
-        public ICollection<Matchup> Matchups { get; set; } = new List<Matchup>();
+        public ICollection<CourtTime> CoutTimes { get; set; } = new List<CourtTime>();
     }
 }

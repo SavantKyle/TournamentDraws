@@ -17,4 +17,4 @@ Post-Deployment Script Template
 :r .\Seed\AddTeams.sql
 :r .\Seed\AddPlayers.sql
 :r .\Seed\AddCourts.sql
-:r .\Seed\AddMatchDateTimes.sql
+:r .\Seed\AddCourtTimes.sql

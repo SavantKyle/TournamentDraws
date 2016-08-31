@@ -4,10 +4,10 @@ using Models.Contracts;
 
 namespace Models
 {
-    public class MatchDateTime : IEntity
+    public class CourtTime : IEntity
     {
         public int Id { get; set; }
-        public DateTime DateTimeOfPlay { get; set; }
+        public DateTime StartTime { get; set; }
         public bool IsAvailable { get; set; }
         public int CourtId { get; set; }
 

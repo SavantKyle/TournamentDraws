@@ -39,6 +39,11 @@
     <Compile Include="Addresses\GetById.cs" />
     <Compile Include="Addresses\Insert.cs" />
     <Compile Include="Addresses\Update.cs" />
+    <Compile Include="CourtTimes\Delete.cs" />
+    <Compile Include="CourtTimes\GetAll.cs" />
+    <Compile Include="CourtTimes\GetById.cs" />
+    <Compile Include="CourtTimes\Insert.cs" />
+    <Compile Include="CourtTimes\Update.cs" />
     <Compile Include="Courts\Delete.cs" />
     <Compile Include="Courts\GetAll.cs" />
     <Compile Include="Courts\GetById.cs" />
